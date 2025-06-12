@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/iconn.ico">   
+    <link rel="stylesheet" href="../css/stilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
+    <script defer src="../js/script.js"></script>
+    <title>Contactos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-izq">
+                <div class="dropdown">
+                    <button class="dropbtn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="../index.html">Inicio</a>
+                        <a href="trabajos.html">Trabajos</a>
+                        <a href="propuestas.html">Propuestas</a>
+                        <a href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a href="../index.html" class="logito">
+                    <img src="../images/icon.png" alt="Logo de mi sitio web">
+                </a>
+            </div>
+            <div class="navbar-dere">
+                <button id="login-btn" class="login-bton">Login</button>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="contact-contain">
+            <form class="contact-form">
+            <div>
+                <h2>Contacto en un toque</h2>
+            </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefono</label>
+                    <input type="tel" name="tel" required >
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">¿Desea recibir ofertas laborales?</label>
+                </div>
+                
+                <button type="submit" id="btnEnviar" name="btnEnviar" value="enviar"
+						class="bton-env"> ENVIAR </button>
+                
+            </form>
+            <div class="datitos">
+                <h2>"Otras vias de comunicación a comunicar"</h2>
+                <p>También puede contactarse con nosotros usando los siguientes medios:</p>
+                <ul>
+                    <li>Teléfono: +54  4554 8996</li>
+                    <li>Email: contact@Workiness.org</li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="futer">
+            <div class="footer-logo">
+                <img src="../images/icon.png" alt="Logo Icono de la pagina">
+                <span>© 2025 - 2223 </span>
+                <span>Todos los derechos a sus respectivos workers</span>
+            </div>
+            <div class="futerSub">
+                    <h4>Conectate con nosotros:</h4>
+                    <a href="https://www.instagram.com/" target="_blank">| Instagram</a>
+                    <a href="https://www.facebook.com/" target="_blank">| Facebook</a>
+                    <a href="https://twitter.com/" target="_blank">| Twitter</a>
+                    <a href="https://www.tiktok.com/" target="_blank">| TikTok</a>
+            </div>
+        </div>
+        <!-- Made for: Ignacio Mendieta  -->
+    </footer>
+</body>
+</html>

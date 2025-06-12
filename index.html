@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/iconn.ico">   
+    <link rel="stylesheet" href="css/stilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>StevenJobs</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-izq">
+                <div class="dropdown">
+                    <button class="dropbtn">Menú</button>
+                    <div class="dropdown-content">
+                        <a href="#">Inicio</a>
+                        <a href="pages/trabajos.html">Trabajos</a>
+                        <a href="pages/propuestas.html">Propuestas</a>
+                        <a href="pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a href="#" class="logito">
+                    <img src="images/icon.png" alt="Logo de mi sitio web">
+                </a>
+            </div>
+            <div class="navbar-dere">
+                <button id="login-btn" class="login-bton">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="fondo-modal" id="fondo-modal">
+                <div class="ventana-modal" id="ventana-modal">
+                    <h1>Bienvenidos a StevenJobs</h1>
+                    <img src="images/fondo.jpg" alt="perfil-ventana">
+                    <p class="mb-4">En esta pagina web tendras los trabajos, contactos y alcances para enriquecer tu curriculum/portfolio; todo seleccionado por profesionales y chequeado sin trampas algunas!!</p>
+                    <div>
+                        <button class="boton" id="cerrar-aviso">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-btn" class="close">x</span>
+                    <h2>Iniciar sesión</h2>
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                    <button id="login-submit">Iniciar sesión</button>
+                    <p>¿No tienes una cuenta? <a href="#" id="register-link">Regístrate</a></p>
+                </div>
+            </div>
+            <div id="register-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-register" class="close">x</span>
+                    <h2>Registro</h2>
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo electrónico">
+                    <input type="password" placeholder="Contraseña">
+                    <button id="register-submit">Registrarse</button>
+                    <p>¿Ya tienes una cuenta freelancer? <a href="#" id="login-link">Iniciar sesión</a></p>
+                </div>
+            </div>
+        </section>  
+        <section>
+            <div class="principio">
+                <div class="text-princip">
+                    <h1>Busca tu trabajo o contacto ayuda en esta web.</h1>
+                    <p>Perfecto lugar para buscar personas de confianza y trabajos sin trabas en el camino.</p>
+                    <div>
+                        <button id="login-btonDos" class="login-bton">Logeate</button>
+                        <button id="register-bton" class="login-bton">Registrate</button>
+                    </div>
+                </div>
+                <div class="image-princip">
+                    <img src="images/fondo.jpg" alt="Cuarto moderno con colores pasteles">
+                </div>
+            </div>
+        </section>
+        <section class="compra">
+            <div class="tabs">
+                <input type="radio" class="tabsRadio" name="decoraciones" id="tab1" checked>
+                <label for="tab1" class="tabsLabel">Todos</label>
+                <div class="tabsContainr">
+                    <div class="tabsContent">
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/fondo.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Servicio Completo</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                <input type="radio" class="tabsRadio" name="decoraciones" id="tab2">
+                <label for="tab2" class="tabsLabel">Freelances</label>
+                <div class="tabsContainr">
+                    <div class="tabsContent">
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/casa6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <input type="radio" class="tabsRadio" name="decoraciones" id="tab3">
+                <label for="tab3" class="tabsLabel">Proyectos</label>
+                <div class="tabsContainr">
+                    <div class="tabsContent">
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/jardin6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$ </span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <input type="radio" class="tabsRadio" name="decoraciones" id="tab4">
+                <label for="tab4" class="tabsLabel">Changuitas</label>
+                <div class="tabsContainr">
+                    <div class="tabsContent">
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita1.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita2.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita3.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita4.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita5.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <span class="ofert-work">Oferta Laboral X</span>
+                        <img src="images/habita6.jpg" alt="Imagen del producto">
+                        <div class="card-info">
+                            <span class="ofert-descrip">Descripcion del trabajo + $$$$</span>
+                            <button class="appli-button">Aplicar Oferta</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div>
+                <form id="buscar-form">
+                    <input type="text" id="buscar-input" placeholder="Buscar">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+    <div class="futer">
+        <div class="footer-logo">
+            <img src="images/icon.png" alt="Logo Icono de la pagina">
+            <span>© 2023 - 2223 </span>
+            <span>Todos los derechos a sus respectivos</span>
+        </div>
+        <div class="futerSub">
+                <h4>Conectate con nosotros:</h4>
+                <a href="https://www.instagram.com/" target="_blank">| Instagram</a>
+                <a href="https://www.facebook.com/" target="_blank">| Facebook</a>
+                <a href="https://twitter.com/" target="_blank">| Twitter</a>
+                <a href="https://www.tiktok.com/" target="_blank">| TikTok</a>
+        </div>
+    </div>
+    <!-- Made for: Ignacio Mendieta  -->
+    </footer>
+</body>
+</html>
