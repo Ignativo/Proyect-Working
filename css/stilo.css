@@ -192,6 +192,21 @@ nav {
     border-radius: 15px;
 }
 
+@media (max-width: 768px) {
+    
+    .modal-content {
+        background-color: whitesmoke;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 90%;
+        text-align: center;
+        border-radius: 15px;
+        }
+    }
+
+
+
 .modal-content input {
     background: lightblue;
     border-radius: 14px;
@@ -320,7 +335,16 @@ nav {
 #buscar-form button:hover, .modal-content button:hover {
     background-color: #23527c;
 }
-
+@media (max-width: 768px) {
+    
+    .tabs {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 40px;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 /* Cards Diseño */
 
 .tabsContent {
